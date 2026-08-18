@@ -1,7 +1,7 @@
-def ft_seed_inventory(p: str, q: int, m: str):
-    if (m == "packets"):
-        print(p + " seeds: " + str(q) + " " + m + " available")
-    elif (m == "grams"):
-        print(p + " seeds: " + str(q) + " " + m + " total")
-    elif (m == "area"):
-        print(p + " seeds: " + "covers " + str(q) + " " + m + " square meters")
+def ft_seed_inventory(seed_type: str, quantity: int, unit: str):
+    if (unit == "packets"):
+        print("{} seeds: {} {} available".format(seed_type, quantity, unit))
+    elif (unit == "grams"):
+        print(seed_type + " seeds: " + str(quantity) + " " + unit + " total")
+    elif (unit == "area"):
+        print(seed_type + " seeds: covers " + str(quantity) + " square meters")
